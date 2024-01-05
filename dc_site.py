@@ -1,25 +1,20 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-# route -> hashtagtreinamentos.com/
-# função -> o que você quer exibir naquela página
-# template
 
 @app.route("/")
 def homepage():
-    return render_template("/site/home2.html")
+    return render_template("/Site/home2.html")
 
 @app.route("/sobre")
 def sobre():
-    return render_template("/site/sobre.html")
+    return render_template("/Site/sobre.html")
 
 @app.route("/portifolio")
 def portifolio():
-    return render_template("/site/portifolio.html")
+    return render_template("/Site/portifolio.html")
 
-# colocar o site no ar
 if __name__ == "__main__":
     app.run(debug=True)
 
-    # servidor do heroku
 
